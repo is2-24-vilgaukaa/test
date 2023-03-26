@@ -1,0 +1,2292 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Оценка качества готового программного продукта</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+@font-face
+	{font-family:"\@Microsoft YaHei";
+	panose-1:2 11 5 3 2 2 4 2 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Заголовок 1 Знак";
+	margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h2
+	{mso-style-link:"Заголовок 2 Знак";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Название Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Название Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Подзаголовок Знак";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Текст выноски Знак";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.a
+	{mso-style-name:"Название Знак";
+	mso-style-link:Название;
+	font-family:"Cambria","serif";
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.a0
+	{mso-style-name:"Подзаголовок Знак";
+	mso-style-link:Подзаголовок;
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	letter-spacing:.75pt;
+	font-style:italic;}
+span.a1
+	{mso-style-name:"Текст выноски Знак";
+	mso-style-link:"Текст выноски";
+	font-family:"Tahoma","sans-serif";}
+span.2
+	{mso-style-name:"Заголовок 2 Знак";
+	mso-style-link:"Заголовок 2";
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+span.1
+	{mso-style-name:"Заголовок 1 Знак";
+	mso-style-link:"Заголовок 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Microsoft YaHei","sans-serif";
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 1.0cm 1.0cm 1.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=RU link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
+ width="100%" style='width:100.0%;border-collapse:collapse;margin-left:7.55pt;
+ margin-right:7.55pt;margin-bottom:34.2pt'>
+ <tr>
+  <td width=916 valign=top style='width:549.4pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+  <p class=MsoTitle align=center style='text-align:center'><span
+  style='position:absolute;z-index:251661312;left:0px;margin-left:1px;
+  margin-top:56px;width:904px;height:2px'><img width=904 height=2
+  src="ПР21.files/image001.png"></span><span style='font-size:24.0pt;
+  font-family:"Times New Roman","serif";color:windowtext;letter-spacing:0pt'>Оценка
+  качества готового программного продукта</span></p>
+  </div>
+  </td>
+ </tr>
+ <tr>
+  <td valign=bottom style='padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoSubtitle align=center style='text-align:center'><span
+  style='font-size:16.0pt;line-height:115%;font-family:"Times New Roman","serif";
+  color:black;font-style:normal'>Выполнила: Вильгаук А.</span></p>
+  </td>
+ </tr>
+ <tr style='height:57.6pt'>
+  <td valign=bottom style='padding:0cm 5.4pt 0cm 5.4pt;height:57.6pt'>
+  <p class=MsoNormal><span style='font-size:12.0pt;line-height:115%;color:black'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='position:absolute;z-index:251669504;margin-left:
+100px;margin-top:3px;width:764px;height:154px'><img width=764 height=154
+src="ПР21.files/image002.png"></span><span style='position:absolute;z-index:
+251665408;margin-left:1px;margin-top:289px;width:899px;height:4px'><img
+width=899 height=4 src="ПР21.files/image003.png"></span><span style='position:
+absolute;z-index:251667456;margin-left:3px;margin-top:297px;width:899px;
+height:4px'><img width=899 height=4 src="ПР21.files/image003.png"></span><span
+style='position:absolute;z-index:251663360;margin-left:2px;margin-top:281px;
+width:899px;height:4px'><img width=899 height=4 src="ПР21.files/image003.png"></span><span
+style='position:absolute;z-index:251660288;margin-left:0px;margin-top:0px;
+width:768px;height:270px'><img width=768 height=270
+src="ПР21.files/image004.png"></span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                       </p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoTocHeading style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;line-height:150%'><span style='font-size:18.0pt;
+line-height:150%;font-family:"Times New Roman","serif";color:#5F497A;
+font-weight:normal'>Оглавление</span></p>
+
+<p class=MsoToc1><a
+href="#_Toc128328230"><span style='font-size:14.0pt;line-height:115%;
+font-family:"Times New Roman","serif"'>Введение</span><span style='font-size:
+14.0pt;line-height:115%;font-family:"Times New Roman","serif";color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328231"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>1.1 Цель</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328232"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>1.2 Фон проекта</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328233"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>1.3&nbsp;Определение,
+первые буквы и сокращения</span><span style='font-size:14.0pt;line-height:115%;
+font-family:"Times New Roman","serif";color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328234"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>1.4&nbsp;Ссылка</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>2</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328235"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Резюме теста</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328236"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>2.1 Время тестирования</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>3</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328237"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>2.3 Тестовая версия</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328238"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>2.4 Прецедент</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328239"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>2.5 Тестовая стратегия</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>6</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328240"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Анализ результатов</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>8</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328241"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>3.1 Тест функции</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>8</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328242"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>3.2 Тест интерфейса</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328243"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>3.3 Тест по
+совместимости</span><span style='font-size:14.0pt;line-height:115%;font-family:
+"Times New Roman","serif";color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328244"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>3.4 Тест-кейс</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328245"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Вывод</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>10</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc128328246"><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Приложение</span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>. </span><span
+style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif";
+color:windowtext;display:none;text-decoration:none'>11</span></a></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Times New Roman","serif"'>&nbsp;</span></p>
+
+<span style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Times New Roman","serif"'>&nbsp;</span></p>
+
+<h1 align=center style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-align:center;line-height:150%'><a name="_Toc128328230"><span
+style='font-size:16.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Введение</span></a></h1>
+
+<p class=MsoListParagraph style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328231"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif";color:black'>1.1 Цель</span></b></a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Цель написания отчета состоит в предоставлении полной и
+объективной информации о текущем состоянии качества проекта </span><span
+lang=EN-US style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Paint</span><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif";color:black'>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%;background:white'><a
+name="_Toc128328232"><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif";color:black'>Этот документ используется для записи процессов
+тестирования, суммирует условия испытаний каждого раунда, анализирует тестовые
+данные, индукцию вопросов и устаревших рисков, подверженных воздействию во
+время тестирования и дает соответствующие рекомендации по тестированию для
+последующей деятельности.</span></a></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><b><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>1.2 Фон проекта</span></b></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><a name="_Toc126396165"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Функциональные требования системы должны соответствовать следующим
+критериям оценивания:</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396166"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Полнота.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396167"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>2<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Корректность.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396168"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>3<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Осуществляемость.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396169"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>4<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Необходимость.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396170"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>5<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Назначение приоритетов.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396171"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>6<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Недвусмысленность.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396172"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>7<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Проверяемость.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396173"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>8<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Согласованность.</span></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><a name="_Toc126396174"><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>9<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Отслеживаемость.</span></a></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328233"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif";color:#222222'>1.3&nbsp;Определение,
+первые буквы и сокращения</span></b></a></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:#222222'>Отсутствуют </span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328234"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif";color:#222222'>1.4&nbsp;Ссылка</span></b></a></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:#222222'>Резюме каждой стадии тестирования колесных систем.</span></p>
+
+<span style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:115%;font-family:
+"Times New Roman","serif"'>&nbsp;</span></p>
+
+<p class=MsoListParagraph align=center style='margin-top:18.0pt;margin-right:
+0cm;margin-bottom:12.0pt;margin-left:0cm;text-align:center;line-height:150%'><a
+name="_Toc128328235"><b><span style='font-size:16.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Резюме теста</span></b></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Для тестирования
+приложения </span><span lang=EN-US style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Paint</span><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'> были использованы
+следующие методы тестирования: дымовое тестирование для проверки базовой
+функциональности приложения, тест интерфейса, тест по совместимости и тест по
+безопасности.</span></p>
+
+<p class=MsoListParagraph style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328236"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>2.1 Время тестирования</span></b></a></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%;background:white'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:#222222'>Время испытаний всего приложения </span><span lang=EN-US
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:#222222'>Paint</span><span lang=EN-US style='font-size:14.0pt;line-height:
+150%;font-family:"Times New Roman","serif";color:#222222'> </span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:#222222'>начинается с 4 февраля 2023 года по 12 февраля 2023 года.</span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><b><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>2.2&nbsp;Тестовый
+диапазон</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Объем
+этого тестового покрытия включает в себя: функциональные тестирования,
+тестирование совместимости, тестирование интерфейса, тестирование на
+безопасность и мониторинг качества. </span></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Тест функции:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Основные
+функции следующие:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>(пояснение:
+А обозначает положительный результат тестирования, В – нормальный, С –
+отрицательный)</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:22.25pt'>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;background:
+  #5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+  color:white'>№</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+  color:white'>Название</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:white'>Результат</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Печать и
+  предпросмотр.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:black'>В</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>2</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Поддержка модулей
+  шрифтов.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:black'>В</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>3</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Выделение изображений
+  и их перемещение.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>4</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Создание изображений.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>5</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Сохранение
+  изображений.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>6</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Горячие клавиши.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>7</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Открытие ранее
+  созданных изображений.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>8</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Отправка изображений
+  по электронной почте.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:black'>В</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>9</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Копирование
+  изображений.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>10</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Пересылка
+  изображения.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:black'>В</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif"'>Основные функции </span><span lang=EN-US
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Paint</span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>
+включают в себя:</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:22.25pt'>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;background:
+  #5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:white'>№</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+  color:white'>Название</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:white'>Результат</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Проведение линий
+  различной толщины и цвета.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>2</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Использование кистей
+  различной формы, ширины и цвета.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>3</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Построение различных
+  фигур (закрашенных/не закрашенных).</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>4</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Помещение текста на
+  рисунок.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>5</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Изменить размер и
+  цвет рисунка.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraph style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif"'>Тест интерфейса:</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:22.25pt'>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;background:
+  #5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+  color:white'>№</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+  color:white'>Название</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:white'>Результат</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Тестирование
+  интерфейса каждого продукта и пространства.</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;text-indent:35.45pt;
+line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif"'>Тест по совместимости:</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:22.25pt'>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;background:
+  #5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:white'>№</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;
+  margin-bottom:.0001pt;text-align:center;line-height:150%'><span
+  style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+  color:white'>Название</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:22.25pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif";color:white'>Результат</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span lang=EN-US style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Firefox</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>В</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>2</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span lang=EN-US style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>Chrome</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>А</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=47 style='width:1.0cm;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpFirst align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>3</span></p>
+  </td>
+  <td width=662 style='width:14.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+  text-align:justify;line-height:150%'><span lang=EN-US style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>IE7</span></p>
+  </td>
+  <td width=189 style='width:4.0cm;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoListParagraphCxSpLast align=center style='margin:0cm;margin-bottom:
+  .0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+  line-height:150%;font-family:"Times New Roman","serif"'>В</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoListParagraphCxSpFirst style='margin-top:12.0pt;margin-right:0cm;
+margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:justify;
+text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;line-height:
+150%;font-family:"Times New Roman","serif"'>Тест безопасности:</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>В
+ходе проведения данного этапа тестирования не было обнаружено проблем с
+безопасностью приложения.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Метод тестирования
+Тест-кейс:</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:20.85pt'>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;background:
+  #5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>№ Тест-кейса</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Название проверки</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Результат</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:20.85pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Замечания и рекомендации</span></p>
+  </td>
+ </tr>
+ <tr style='height:27.7pt'>
+  <td width=907 colspan=4 valign=top style='width:544.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCC0D9;padding:0cm 5.4pt 0cm 5.4pt;height:27.7pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  color:white'>Кроссбраузерное тестирование</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№1</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Приложение корректно отображается и
+  функционирует во всех актуальных браузерах (</span><span lang=EN-US
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>IE</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Chrome</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>, </span><span
+  lang=EN-US style='font-size:14.0pt;font-family:"Times New Roman","serif"'>FireFox</span><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>)</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:#1E9231'>Положительно</span></p>
+  </td>
+  <td width=256 valign=top style='width:153.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№2</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Приложение корректно отображается и
+  функционирует во всех актуальных версиях браузеров</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:#1E9231'>Положительно</span></p>
+  </td>
+  <td width=256 valign=top style='width:153.55pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:25.15pt'>
+  <td width=907 colspan=4 valign=top style='width:544.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCC0D9;padding:0cm 5.4pt 0cm 5.4pt;height:25.15pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  color:white'>Авторизация и работа с профилем</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№3</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Создайте новый
+  аккаунт.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Если приложение установлено на
+  компьютере, то регистрация невозможна</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№4</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Авторизуйтесь
+  с существующим аккаунтом.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№5</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Восстановите/сбросьте
+  забытый пароль.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№6</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>При вводе
+  неверного пароля отображается сообщение об ошибке и ссылка на страницу
+  восстановления пароля.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№7</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Отредактируйте
+  профиль пользователя.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:39.35pt'>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№8</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Зарегистрируйте
+  нового пользователя, используя аккаунт социальных сетей.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:39.35pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№9</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Авторизуйтесь,
+  используя аккаунт социальных сетей.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№10</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Загрузите в
+  профиль аватар/картинку.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№11</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Отредактируйте
+  аватар/картинку.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№12</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Удалите
+  аватар/картинку.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:24.4pt'>
+  <td width=907 colspan=4 valign=top style='width:544.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCC0D9;padding:0cm 5.4pt 0cm 5.4pt;height:24.4pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  color:white'>Навигация</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№13</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>При выполнении
+  действий (например, выход из аккаунта) и манипуляциях с данными (например,
+  удаление файла) отображается сообщение с подтверждением.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№14</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Корректность
+  работы сортировки.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№15</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Корректность
+  работы фильтрации.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован<span
+  style='color:#1E9231'> о</span></span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№16</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Корректность
+  работы кнопок и ссылок в меню навигации.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:26.65pt'>
+  <td width=907 colspan=4 valign=top style='width:544.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCC0D9;padding:0cm 5.4pt 0cm 5.4pt;height:26.65pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  color:white'>Числа и даты</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№17</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Осуществляется
+  проверка на корректность дат.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№18</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Корректная
+  обработка високосного года, отсутствует сообщение об ошибке</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:29.65pt'>
+  <td width=907 colspan=4 valign=top style='width:544.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCC0D9;padding:0cm 5.4pt 0cm 5.4pt;height:29.65pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  color:white'>Интеграция с социальными сетями</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№19</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Корректное
+  отображение кнопок социальных сетей.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Функционал не реализован</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№20</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>При нажатии на
+  кнопку &quot;поделиться&quot; отображается всплывающее окно, в котором
+  доступна функция редактирования сообщения перед отправкой.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:#C00000'>Отрицательно</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>При нажатии кнопки отправить появляется
+  сообщение: Команда «Отправить» не смогла отправить сообщение</span></p>
+  </td>
+ </tr>
+ <tr style='height:28.2pt'>
+  <td width=907 colspan=4 valign=top style='width:544.0pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#CCC0D9;padding:0cm 5.4pt 0cm 5.4pt;height:28.2pt'>
+  <p class=MsoNormal align=center style='margin-top:6.0pt;margin-right:0cm;
+  margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Times New Roman","serif";
+  color:white'>Загрузка и скачивание файлов</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№21</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Файлы успешно
+  загружаются.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:#1E9231'>Положительно</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=165 style='width:98.75pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№22</span></p>
+  </td>
+  <td width=277 style='width:166.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=Default align=center style='text-align:center'><span
+  style='font-size:14.0pt;font-family:"Times New Roman","serif"'>Файлы успешно
+  скачиваются.</span></p>
+  </td>
+  <td width=209 style='width:125.4pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:#1E9231'>Положительно</span></p>
+  </td>
+  <td width=256 style='width:153.55pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328237"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>2.3 Тестовая версия</span></b></a></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>В
+таблице ниже приведены распределение каждого раунда тестовой версии из соответствующего
+диапазона теста.</span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328238"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>2.4 Прецедент</span></b></a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Прецедент
+отражает функциональные требования к системе, описывает ее границы, интерфейс,
+и выступает основой для тестирования заказчиком.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:49.65pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>В
+ходе выполнения задачи были использованы следующие варианты использования
+прецедентов:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:2.0cm;line-height:150%'><span style='font-size:
+14.0pt;line-height:150%;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>основной
+(выполнение функций);</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:2.0cm;line-height:150%'><span style='font-size:
+14.0pt;line-height:150%;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>вспомогательный
+(настройка системы);</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:2.0cm;line-height:150%'><span style='font-size:
+14.0pt;line-height:150%;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>дополнительный
+(для удобства пользователя).</span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328239"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>2.5 Тестовая стратегия</span></b></a></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Тестовая стратегия для
+тестирования приложения </span><span lang=EN-US style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Paint</span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>1. Тип теста:
+определяется как интегрированное тестирование и тестирование системы.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>2. Интегрированная
+тестовая фаза была интегрирована в основном для анализа, подтверждения и
+нахождение несоответствия спроса в качестве основной цели.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>3. Фаза тестирования
+системы разделена на три раунда. Основная стратегия заключается в следующем:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Первый раунд - это тест
+на покрытие, а тестовый диапазон охватывает все диапазоны, описанные выше,
+обращающие внимание на все уровни ошибок;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Второй раунд
+представляет собой функциональный тест, который ослабляет все отремонтированные
+ошибки;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Третий раунд
+функционально проверен, совместимый с модулями результатов. Дымовое
+тестирование выполняется до начала каждого раунда теста. Тест по совместимости
+и тест интерфейса выполняется только в первом раунде.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>4. Оценка дефекта:
+после каждого раунда теста оно организует разработку инженеров, тестовых
+инженеров, инженеров продуктов и других дефектов продукта совместной оценки.
+Содержание оценки включает в себя дефектные решения, включает в себя изменения
+в востребовании, следующий раунд времени начала и может ли это закончить тест.</span></p>
+
+<span style='font-size:14.0pt;line-height:115%;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoListParagraph align=center style='margin-top:18.0pt;margin-right:
+0cm;margin-bottom:12.0pt;margin-left:0cm;text-align:center;line-height:150%'><a
+name="_Toc128328240"><b><span style='font-size:16.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Анализ результатов</span></b></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>Для тестирования
+приложения </span><span lang=EN-US style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>Paint</span><span lang=EN-US
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>
+</span><span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>использовались
+следующие тесты и методы тестирования:</span></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:49.65pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Тест
+функции.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:49.65pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Тест
+интерфейса.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:49.65pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Тест
+по совместимости.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:49.65pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Тест-кейс
+(22 параметра).</span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328241"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>3.1 Тест функции</span></b></a></p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+18.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>На
+данном этапе проводилось два тестирования с методом оценивания А, В и С.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'><img width=576
+height=329 id="Диаграмма 7" src="ПР21.files/image005.png"></span></p>
+
+<p class=MsoListParagraph align=center style='margin-top:12.0pt;margin-right:
+0cm;margin-bottom:12.0pt;margin-left:0cm;text-align:center;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Рисунок
+1 - График тестирования функции №1</span></p>
+
+<p class=MsoListParagraphCxSpMiddle align=center style='margin:0cm;margin-bottom:
+.0001pt;text-align:center;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'><img width=588
+height=313 id="Диаграмма 8" src="ПР21.files/image006.png"></span></p>
+
+<p class=MsoListParagraph align=center style='margin-top:12.0pt;margin-right:
+0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif"'>Рисунок 2 - График тестирования функции №2</span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328242"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>3.2 Тест интерфейса</span></b></a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin:0cm;margin-bottom:.0001pt;
+text-align:justify;text-indent:35.45pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Оценивался
+один критерий, и его результат является положительным.</span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328243"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>3.3 Тест по совместимости</span></b></a></p>
+
+<p class=MsoListParagraph align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%'><span style='font-size:14.0pt;line-height:
+150%;font-family:"Times New Roman","serif"'><img width=600 height=343
+id="Диаграмма 9" src="ПР21.files/image007.png"></span></p>
+
+<p class=MsoListParagraph align=center style='margin-top:12.0pt;margin-right:
+0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif"'>Рисунок 3 - График тестирования совместимости </span></p>
+
+<p class=MsoListParagraph style='margin-top:18.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm;text-align:justify;text-indent:35.45pt;line-height:150%'><a
+name="_Toc128328244"><b><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>3.4 Тест-кейс</span></b></a></p>
+
+<p class=MsoListParagraph style='margin:0cm;margin-bottom:.0001pt;text-align:
+justify;text-indent:35.45pt;line-height:150%'><span style='font-size:14.0pt;
+line-height:150%;font-family:"Times New Roman","serif"'>В методе Тест-кейс есть
+3 результата: положительно, функционал не реализован и отрицательно. </span></p>
+
+<p class=MsoListParagraph align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:150%'><span style='font-size:14.0pt;line-height:
+150%;font-family:"Times New Roman","serif"'><img width=746 height=421
+id="Диаграмма 10" src="ПР21.files/image008.png"></span></p>
+
+<p class=MsoListParagraph align=center style='margin-top:12.0pt;margin-right:
+0cm;margin-bottom:0cm;margin-left:0cm;margin-bottom:.0001pt;text-align:center;
+line-height:150%'><span style='font-size:14.0pt;line-height:150%;font-family:
+"Times New Roman","serif"'>Рисунок 4 - График тест-кейса </span></p>
+
+<span style='font-size:11.0pt;line-height:115%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1 align=center style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-align:center;line-height:150%'><a name="_Toc128328245"><span
+style='font-size:16.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:windowtext'>Вывод</span></a></h1>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:150%'><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>В данном разделе представлены выводы по
+результатам испытаний, а также общая статистика по дефектам, которые были
+выявлены в результате тестирования приложения </span><span lang=EN-US
+style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:black'>Paint</span><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif";color:black'>. </span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:150%'><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>В период испытаний был выявлен 1 дефект.</span>
+<span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'>Список
+дефектов приведен в Приложении.</span></p>
+
+<span style='font-size:14.0pt;line-height:150%;font-family:"Times New Roman","serif"'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+35.45pt;line-height:150%'></p>
+
+<h1 align=center style='margin-top:18.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-align:center;line-height:150%'><a name="_Toc128328246"><span
+style='font-size:16.0pt;line-height:150%;font-family:"Times New Roman","serif";
+color:windowtext'>Приложение</span></a></h1>
+
+<p class=MsoNormal style='text-indent:35.45pt'><span style='font-size:14.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Таблица дефектов:</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr style='height:24.55pt'>
+  <td width=177 valign=top style='width:106.35pt;border:solid windowtext 1.0pt;
+  background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:24.55pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Порядковый №</span></p>
+  </td>
+  <td width=106 valign=top style='width:63.75pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:24.55pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>№ Кейса</span></p>
+  </td>
+  <td width=307 valign=top style='width:184.3pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:24.55pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Краткое описание</span></p>
+  </td>
+  <td width=154 valign=top style='width:92.15pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:24.55pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Состояние</span></p>
+  </td>
+  <td width=162 valign=top style='width:97.45pt;border:solid windowtext 1.0pt;
+  border-left:none;background:#5F497A;padding:0cm 5.4pt 0cm 5.4pt;height:24.55pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif";color:white'>Критичность</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=177 style='width:106.35pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>1</span></p>
+  </td>
+  <td width=106 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>№20</span></p>
+  </td>
+  <td width=307 style='width:184.3pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Команда «Отправить» не смогла
+  отправить сообщение.</span></p>
+  </td>
+  <td width=154 style='width:92.15pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Обнаружена</span></p>
+  </td>
+  <td width=162 style='width:97.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='font-size:14.0pt;
+  font-family:"Times New Roman","serif"'>Средняя</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:
+justify;line-height:150%'><span style='font-size:14.0pt;line-height:150%;
+font-family:"Times New Roman","serif"'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
